@@ -31,7 +31,7 @@ public class GameManager : Singleton<GameManager>
         player.IsRunning = true;
         player._playerAnim.Play("Run");
         GameManagerCanvas.SetActive(false);
-        music.Play();
+        //music.Play();
 
 
     }

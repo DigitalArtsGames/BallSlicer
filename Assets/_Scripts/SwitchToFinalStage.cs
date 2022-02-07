@@ -14,6 +14,10 @@ public class SwitchToFinalStage : MonoBehaviour
     public static event System.Action onPlayerFinish;
     public static bool isReachedCenter = false;
 
+    private void Start()
+    {
+        isReachedCenter = false;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

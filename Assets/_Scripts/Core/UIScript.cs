@@ -25,7 +25,7 @@ public class UIScript : Singleton<UIScript>
     {
         Enemy.onEnemyDie += DyingReward;
         BladeController.onRotateFinish += ComboReward;
-
+        CoinCountText.text = PlayerPrefs.GetInt("MaxCoin").ToString();
     }
 
     private void OnDisable()
