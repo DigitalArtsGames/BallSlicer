@@ -13,7 +13,6 @@ public class EnergyBar : MonoBehaviour
     void Start()
     {
         Enemy.onEnemyDie += IncreaseEnergy;
-        
     }
 
     private void OnDisable()
